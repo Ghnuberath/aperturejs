@@ -4,3 +4,7 @@
 .classpath
 
 target/
+node_modules
+bower_components
+aperture.js
+aperture.min.js

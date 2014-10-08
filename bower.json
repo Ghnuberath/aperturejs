@@ -1,0 +1,26 @@
+{
+  "name": "ApertureJS",
+  "version": "2.0.0-alpha",
+  "authors": [
+    {"name":"Oculus Info Inc.","homepage":"http://www.oculusinfo.com/"}
+  ],
+  "homepage":"http://aperturejs.com/",
+  "repository": {
+    "type":"git",
+    "url":"https://github.com/oculusinfo/aperturejs"
+  },
+  "description": "Aperture JS is an open, adaptable and extensible JavaScript visualization framework designed to produce visualizations for analysts and decision makers in any common web browser.",
+  "license": "MIT",
+  "main": ["aperture.js", "aperture.min.js"],
+  "ignore": [
+    "lib",
+    "test",
+    ".gitignore",
+    "package.json",
+    "node_modules",
+    "Gruntfile.js"
+  ],
+  "devDependencies": {
+
+  }
+}
