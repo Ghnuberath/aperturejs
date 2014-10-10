@@ -18,6 +18,7 @@ module.exports = function(grunt) {
         node:      true,
         jquery:    true,
         camelcase: true,
+        loopfunc:  true, //TODO remove one day
         quotmark:  'single',
         //maxdepth:  4,
         globals: {
