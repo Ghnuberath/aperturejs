@@ -5,7 +5,6 @@ module.exports = function(grunt) {
       options: {
         bitwise:   true,
         eqeqeq:    true,
-        curly:     true,
         immed:     true,
         latedef:   true,
         newcap:    true,
@@ -28,7 +27,7 @@ module.exports = function(grunt) {
           OpenLayers:false,
           Raphael:false
         },
-        ignores: ['node_modules/**', 'bower_components/**', 'dist/**']
+        ignores: ['node_modules/**', 'bower_components/**', 'dist/**', 'lib/pre.js', 'lib/pre-package.js', 'lib/post.js', 'header.js']
       },
       lib: {
         files: {
