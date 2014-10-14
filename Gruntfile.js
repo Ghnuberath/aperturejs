@@ -34,7 +34,8 @@ module.exports = function(grunt) {
           jsIdentifierRegEx:true, //TODO get rid of this global - move to aperture.util
           findFieldChainValue:true //TODO get rid of this global - move to aperture.util          
         },
-        ignores: ['node_modules/**', 'bower_components/**', 'dist/**', 'lib/pre.js', 'lib/pre-package.js', 'lib/post.js', 'header.js']
+        ignores: ['node_modules/**', 'bower_components/**', 'dist/**', 'lib/pre.js', 'lib/pre-package.js', 'lib/post.js', 'header.js'],
+        force: true
       },
       lib: {
         files: {
@@ -60,16 +61,19 @@ module.exports = function(grunt) {
     concat: {
       lib : {
         src : [
-          'lib/aperture.js',
+          'lib/header.js',
+          'lib/pre.js',
+          //BEGIN aperture-core          
           'lib/base.js',
           'lib/util.js',
           'lib/core-classes/Class.js',
           'lib/core-packages/config.js',
           'lib/core-packages/log.js',
           'lib/core-packages/canvas.js',
-          'lib/core-classes/Format.js',
           'lib/core-classes/Transition.js',
           'lib/core-classes/Layer.js',
+          'lib/core-packages/vizlet.js',
+          'lib/core-classes/Format.js',          
           'lib/core-classes/Color.js',
           'lib/core-classes/Date.js',
           'lib/core-classes/IconLayer.js',
@@ -81,29 +85,38 @@ module.exports = function(grunt) {
           'lib/core-classes/BarLayer.js',
           'lib/core-classes/Range.js',
           'lib/core-classes/Set.js',
+          'lib/core-classes/NodeLayer.js',
+          'lib/core-classes/LinkLayer.js',
+          'lib/core-classes/SankeyPathLayer.js',
           'lib/core-packages/filter.js',
           'lib/core-packages/io.js',
           'lib/core-packages/palette.js',
-          'lib/core-packages/vizlet.js',
-          'lib/packages/log/AjaxAppender.js',
-          'lib/packages/log/AlertBoxAppender.js',
-          'lib/packages/log/BufferingAppender.js',
-          'lib/packages/log/ConsoleAppender.js',
-          'lib/packages/log/DOMAppender.js',
+          //END aperture-core
+          //BEGIN aperture-log
+          'lib/packages/log/*.js',
+          //END aperture-log
+          //BEGIN aperture-capture
           'lib/packages/capture.js',
+          //END aperture-capture
+          //BEGIN aperture-layout
           'lib/packages/layout.js',
+          //END aperture-layout
+          //BEGIN aperture-pubsub
           'lib/packages/pubsub.js',
+          //END aperture-pubsub
+          //BEGIN aperture-cms
           'lib/packages/store.js',
-          'lib/packages/geo/map.js',
-          'lib/packages/chart/AxisLayer.js',
-          'lib/packages/chart/BarSeriesLayer.js',
-          'lib/packages/chart/ChartLayer.js',
-          'lib/packages/chart/RuleLayer.js',
-          'lib/packages/chart/LineSeriesLayer.js',
+          //END aperture-cms
+          //BEGIN aperture-geo
+          'lib/packages/geo/*.js',
+          //END aperture-geo
+          //BEGIN aperture-chart
+          'lib/packages/chart/*.js',
+          //END aperture-chart
+          //BEGIN aperture-raphael
           'lib/packages/canvas/RaphaelCanvas.js',
-          'lib/core-classes/NodeLayer.js',
-          'lib/core-classes/LinkLayer.js',
-          'lib/core-classes/SankeyPathLayer.js'
+          //END aperture-raphael*/
+          'lib/post.js'
         ],
         dest : 'aperture.js'
       }
@@ -122,7 +135,7 @@ module.exports = function(grunt) {
           'lib/**/*.js', 
           'lib/**/**/*.js'
         ],
-        tasks: ['clean:lib','dist'],
+        tasks: ['clean:lib','package'],
         options: {
           spawn: false
         }
