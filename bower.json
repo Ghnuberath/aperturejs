@@ -21,6 +21,11 @@
     "node_modules",
     "Gruntfile.js"    
   ],
+  "dependencies": {
+    "jquery":  "2.1.1",
+    "raphael": "2.1.2",
+    "openlayers": "2.13.1"
+  },
   "devDependencies": {
 
   }
