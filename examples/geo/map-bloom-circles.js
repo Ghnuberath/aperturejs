@@ -1,0 +1,398 @@
+var data = [
+	{
+		"country": "Qatar",
+		"longitude": 51.5082,
+		"latitude": 25.2948,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 59.037827
+			},
+			{
+				"date": "2008",
+				"value": 49.050583
+			}
+		]
+	},
+	{
+		"country": "Bahrain",
+		"longitude": 50.5354,
+		"latitude": 26.1921,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 30.110535
+			},
+			{
+				"date": "2008",
+				"value": 21.360306
+			}
+		]
+	},
+	{
+		"country": "United Arab Emirates",
+		"longitude": 54.3705,
+		"latitude": 24.4764,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 29.575575
+			},
+			{
+				"date": "2008",
+				"value": 24.984026
+			}
+		]
+	},
+	{
+		"country": "Kuwait",
+		"longitude": 47.9824,
+		"latitude": 29.3721,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 28.966858
+			},
+			{
+				"date": "2008",
+				"value": 30.11476
+			}
+		]
+	},
+	{
+		"country": "United States",
+		"longitude": -77.032,
+		"latitude": 38.8895,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 19.753485
+			},
+			{
+				"date": "2008",
+				"value": 17.941729
+			}
+		]
+	},
+	{
+		"country": "Aruba",
+		"longitude": -70.0167,
+		"latitude": 12.5167,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 19.2162
+			},
+			{
+				"date": "2008",
+				"value": 21.683832
+			}
+		]
+	},
+	{
+		"country": "Brunei Darussalam",
+		"longitude": 114.946,
+		"latitude": 4.94199,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 19.167961
+			},
+			{
+				"date": "2008",
+				"value": 27.538603
+			}
+		]
+	},
+	{
+		"country": "Australia",
+		"longitude": 149.129,
+		"latitude": -35.282,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 18.540585
+			},
+			{
+				"date": "2008",
+				"value": 18.569618
+			}
+		]
+	},
+	{
+		"country": "Luxembourg",
+		"longitude": 6.1296,
+		"latitude": 49.61,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 17.320467
+			},
+			{
+				"date": "2008",
+				"value": 21.492455
+			}
+		]
+	},
+	{
+		"country": "Canada",
+		"longitude": -75.6919,
+		"latitude": 45.4215,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 15.831871
+			},
+			{
+				"date": "2008",
+				"value": 16.33348
+			}
+		]
+	},
+	{
+		"country": "Trinidad and Tobago",
+		"longitude": -61.4789,
+		"latitude": 10.6596,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 15.075555
+			},
+			{
+				"date": "2008",
+				"value": 37.39346
+			}
+		]
+	},
+	{
+		"country": "Faeroe Islands",
+		"longitude": -6.91181,
+		"latitude": 61.8926,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 14.96296
+			},
+			{
+				"date": "2008",
+				"value": 14.563265
+			}
+		]
+	},
+	{
+		"country": "Singapore",
+		"longitude": 103.85,
+		"latitude": 1.28941,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 14.588819
+			},
+			{
+				"date": "2008",
+				"value": 6.6734037
+			}
+		]
+	},
+	{
+		"country": "Estonia",
+		"longitude": 24.7586,
+		"latitude": 59.4392,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 12.367064
+			},
+			{
+				"date": "2008",
+				"value": 13.643125
+			}
+		]
+	},
+	{
+		"country": "Czech Republic",
+		"longitude": 14.4205,
+		"latitude": 50.0878,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 12.192938
+			},
+			{
+				"date": "2008",
+				"value": 11.223318
+			}
+		]
+	},
+	{
+		"country": "Belgium",
+		"longitude": 4.36761,
+		"latitude": 50.8371,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 11.681352
+			},
+			{
+				"date": "2008",
+				"value": 9.792729
+			}
+		]
+	},
+	{
+		"country": "Netherlands",
+		"longitude": 4.89095,
+		"latitude": 52.3738,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 11.170825
+			},
+			{
+				"date": "2008",
+				"value": 10.565128
+			}
+		]
+	},
+	{
+		"country": "Finland",
+		"longitude": 24.9525,
+		"latitude": 60.1608,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 11.059353
+			},
+			{
+				"date": "2008",
+				"value": 10.635779
+			}
+		]
+	},
+	{
+		"country": "Germany",
+		"longitude": 13.4115,
+		"latitude": 52.5235,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 10.914875
+			},
+			{
+				"date": "2008",
+				"value": 9.580545
+			}
+		]
+	},
+	{
+		"country": "Saudi Arabia",
+		"longitude": 46.6977,
+		"latitude": 24.6748,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 10.764499
+			},
+			{
+				"date": "2008",
+				"value": 16.569065
+			}
+		]
+	},
+	{
+		"country": "Denmark",
+		"longitude": 12.5681,
+		"latitude": 55.6763,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 10.576953
+			},
+			{
+				"date": "2008",
+				"value": 8.3778105
+			}
+		]
+	},
+	{
+		"country": "Israel",
+		"longitude": 35.2035,
+		"latitude": 31.7717,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 10.513991
+			},
+			{
+				"date": "2008",
+				"value": 5.153207
+			}
+		]
+	},
+	{
+		"country": "Russian Federation",
+		"longitude": 37.6176,
+		"latitude": 55.7558,
+		"co2": [
+			{
+				"date": "1998",
+				"value": 10.287815
+			},
+			{
+				"date": "2008",
+				"value": 12.037008
+			}
+		]
+	}
+];
+
+$(document).ready(function() {
+	// Create the map in the DOM
+	var map = new aperture.geo.Map('#map');
+
+	// Create a location layer
+	var locations = map.addLayer( aperture.geo.MapNodeLayer );
+	locations.map('latitude').from('latitude');
+	locations.map('longitude').from('longitude');
+
+	// value ranges
+	var totalRange = new aperture.Scalar('Total', [0, 100]);
+	var changeRange = new aperture.Ordinal('change', ['loss','base','gain']);
+
+	// colors
+	var smoggy = '#630',
+		cleaner = new aperture.Color('good').blend('#333', .5);
+
+	// construct the circle layer
+	var bubbles = locations.addLayer( aperture.RadialLayer );
+	bubbles.map('base-radius').asValue(1);
+	bubbles.map('series-count').from('co2.length');
+	bubbles.map('radius').from('co2[].value').using(totalRange.mapKey([3, 80]));
+	bubbles.map('stroke').from(function(index) {
+		return ['none','#222'][index];
+	});
+
+	bubbles.map('fill').from(function(index) {
+		return (index && this.co2[1].value > this.co2[0].value)? smoggy
+			: (!index && this.co2[1].value < this.co2[0].value)? cleaner : smoggy;
+	});
+
+	bubbles.map('opacity').from(function(index) {
+		return (index && this.co2[1].value > this.co2[0].value)? 0.8
+			: (!index && this.co2[1].value < this.co2[0].value)? 0.35 : 0.25;
+	});
+
+	bubbles.on('mouseover', function(event){
+		$('#hover').html( 'Hovering over ' + event.data.country );
+	});
+	bubbles.on('mouseout', function(event){
+		$('#hover').html('');
+	});
+
+	//Zoom to the area of the world with the data
+	map.zoomTo( 20, 25, 2 );
+
+	//load data
+	locations.all( data );
+	map.all().redraw();
+});
