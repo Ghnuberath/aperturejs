@@ -15,10 +15,11 @@
   "ignore": [
     "lib",
     "test",
+    "examples",
     ".gitignore",
     "package.json",
     "node_modules",
-    "Gruntfile.js"
+    "Gruntfile.js"    
   ],
   "devDependencies": {
 
