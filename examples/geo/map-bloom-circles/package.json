@@ -1,0 +1,13 @@
+{
+  "name": "ApertureJSDemo",
+  "author": "Oculus Info Inc.",
+  "description": "Simple server to run ApertureJS ddemos",
+  "homepage":"http://aperturejs.com/",
+  "repository":"https://github.com/oculusinfo/aperturejs.git",
+  "contributors": [ 
+    {"name": "Sean McIntyre","email": "smcintyre@oculusinfo.ca"} 
+  ],
+  "dependencies": {
+    "express": "*"
+  }
+}
