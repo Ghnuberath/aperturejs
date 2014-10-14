@@ -23,10 +23,16 @@ module.exports = function(grunt) {
         //maxdepth:  4,
         globals: {
           aperture:true,
+          alert:false,
           window:false,
           document:false,
           OpenLayers:false,
-          Raphael:false
+          Raphael:false,
+          OpenAjax:false, //TODO get rid of this global by getting rid of pubsub.js
+          google:false, //TODO get rid of this global by extracting packages/geo
+          define:false, //TODO get rid of this global by extracting packages/geo
+          jsIdentifierRegEx:true, //TODO get rid of this global - move to aperture.util
+          findFieldChainValue:true //TODO get rid of this global - move to aperture.util          
         },
         ignores: ['node_modules/**', 'bower_components/**', 'dist/**', 'lib/pre.js', 'lib/pre-package.js', 'lib/post.js', 'header.js']
       },
