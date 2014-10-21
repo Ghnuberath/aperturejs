@@ -357,7 +357,6 @@ $(document).ready(function() {
 
 	// value ranges
 	var totalRange = new aperture.Scalar('Total', [0, 100]);
-	var changeRange = new aperture.Ordinal('change', ['loss','base','gain']);
 
 	// colors
 	var smoggy = '#630',

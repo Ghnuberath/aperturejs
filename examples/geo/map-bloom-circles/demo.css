@@ -63,6 +63,9 @@ img {
 div.olControlZoom a {
 	background-color: #666 !important;
 }
+div.olControlZoom a:hover {
+	background-color: #555 !important;
+}
 #all {
 	position: absolute;
 	width: 1000px;

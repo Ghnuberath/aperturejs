@@ -24,7 +24,7 @@
   "dependencies": {
     "jquery":  "2.1.1",
     "raphael": "2.1.2",
-    "openlayers": "2.13.1"
+    "openlayers": "6ccafe138f"
   },
   "devDependencies": {
 
